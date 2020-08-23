@@ -1,0 +1,9 @@
+.box {
+    width: 18rem;
+    height: 18rem;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}

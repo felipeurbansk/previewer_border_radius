@@ -1,0 +1,48 @@
+
+body {
+    background-color: #4f3636;
+}
+
+.home-content {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controllers-radius {
+    display: grid;
+    grid-template-areas: 
+        "sliderTop sliderTop sliderTop"
+        "sliderLeft box sliderRight"
+}
+
+
+.slider-top {
+    grid-area: sliderTop;
+
+    align-self: center;
+    text-align: left;
+    margin: 0;
+}
+
+.slider-right {
+    grid-area: sliderRight;
+}
+.slider-bottom {
+    grid-area: slider-bottom;
+}
+.slider-left {
+    grid-area: sliderLeft;
+}
+.box {
+    grid-area: box;
+}
