@@ -16,6 +16,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+code {
+    font-size: 1.7rem;
+    color: #ddd;
+    border: 1px solid #fff;
+    background-color: #7f5959;
+    padding: 1.4rem;
+    margin-bottom: 1.4rem;
 }
 
 .controllers-radius {
@@ -23,26 +33,28 @@ main {
     grid-template-areas: 
         "sliderTop sliderTop sliderTop"
         "sliderLeft box sliderRight"
+        "sliderBottom sliderBottom sliderBottom";
+    grid-gap: 2rem;
 }
 
 
 .slider-top {
     grid-area: sliderTop;
-
-    align-self: center;
-    text-align: left;
-    margin: 0;
 }
 
 .slider-right {
     grid-area: sliderRight;
 }
 .slider-bottom {
-    grid-area: slider-bottom;
+    grid-area: sliderBottom;
 }
 .slider-left {
     grid-area: sliderLeft;
 }
 .box {
     grid-area: box;
+}
+
+.slider-vertical {
+    transform: rotate(90deg);
 }

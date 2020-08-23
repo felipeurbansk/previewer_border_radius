@@ -10,3 +10,9 @@ footer .primary {
     color: #DDD;
     font-weight: 600;
 }
+
+a {
+    text-decoration: none;
+    color:#fff;
+    font-size: .8rem;
+}
